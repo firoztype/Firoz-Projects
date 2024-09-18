@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel 3D - @programador.cs</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="conteudo__geral">
+        <div class="container">
+            <div class="container-carrossel">
+                <div class="carrossel">
+                    <div class="carrossel-item"><img src="honey_bg.png" alt=""></div>
+                    <div class="carrossel-item"><img src="honey_bg.png" alt=""></div>
+                    <div class="carrossel-item"><img src="honey_bg.png" alt=""></div>
+                    <div class="carrossel-item"><img src="honey_bg.png" alt=""></div>
+                    <div class="carrossel-item"><img src="honey_bg.png" alt=""></div>
+                    <div class="carrossel-item"><img src="honey_bg.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const carrossel = document.querySelector('.carrossel');
+      
+          carrossel.addEventListener('mouseenter', function() {
+            carrossel.classList.add('paused');
+          });
+      
+          carrossel.addEventListener('mouseleave', function() {
+            carrossel.classList.remove('paused');
+          });
+        });
+      </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
